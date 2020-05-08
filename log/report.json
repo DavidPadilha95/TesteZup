@@ -1,0 +1,315 @@
+[
+  {
+    "uri": "features/support/submarino.feature",
+    "id": "realizar-um-teste-e2e-no-teste-da-submarino,-buscando-um-item-e-validando-ele-no-carrinho-de-compras",
+    "keyword": "Funcionalidade",
+    "name": "Realizar um teste E2E no teste da Submarino, buscando um item e validando ele no carrinho de compras",
+    "description": "    Como Clinte da Submarino\n    Eu quero buscar um item no site e adicionar no carrinho de compras\n    Para que possa finalizar minha aquisição",
+    "line": 4,
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Compras no Submarino",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36600
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33200
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou no site da Submarino",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5818721400
+            }
+          }
+        ]
+      },
+      {
+        "id": "realizar-um-teste-e2e-no-teste-da-submarino,-buscando-um-item-e-validando-ele-no-carrinho-de-compras;buscar-item-de-compra-e-adicionar-no-carrinho",
+        "keyword": "Cenário",
+        "name": "Buscar item de compra e adicionar no carrinho",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@adicionar",
+            "line": 12
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "eu pesquiso pelo item \"Console Playstation 4\"",
+            "line": 14,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21617244600
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "verifico se a minha busca retornou o item desejado",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3255554300
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "adiciono ao carrinho",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21271371600
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo verificar quantos itens meu carrinho possui",
+            "line": 17,
+            "output": [
+              "Seu carrinho possui 1 item(ns)"
+            ],
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 819710500
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 756577000
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Compras no Submarino",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78100
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 93100
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou no site da Submarino",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4609505200
+            }
+          }
+        ]
+      },
+      {
+        "id": "realizar-um-teste-e2e-no-teste-da-submarino,-buscando-um-item-e-validando-ele-no-carrinho-de-compras;validar-a-busca-por-um-item-inexistente",
+        "keyword": "Cenário",
+        "name": "Validar a busca por um item inexistente",
+        "description": "",
+        "line": 20,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@inexistente",
+            "line": 19
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "eu pesquiso pelo item inexistente \"ertdgfrs\"",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16404825400
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a mensagem \"Não encontramos nenhum resultado na sua busca.\" deverá aparecer em tela.",
+            "line": 22,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 826855300
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 968195700
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Contexto",
+        "name": "Compras no Submarino",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39900
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34900
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que estou no site da Submarino",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6076106500
+            }
+          }
+        ]
+      },
+      {
+        "id": "realizar-um-teste-e2e-no-teste-da-submarino,-buscando-um-item-e-validando-ele-no-carrinho-de-compras;validar-que-o-carrinho-está-vazio",
+        "keyword": "Cenário",
+        "name": "Validar que o carrinho está vazio",
+        "description": "",
+        "line": 25,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@vazio",
+            "line": 24
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "eu clicar no carrinho sem nenhum item",
+            "line": 26,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 906391600
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "a mensagem \"Seu carrinho está vazio\" deverá ser apresentada.",
+            "line": 27,
+            "match": {
+              "location": "features/step_definitions/adicionar_steps.rb:45"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 438328400
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.32.1/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 281630200
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
