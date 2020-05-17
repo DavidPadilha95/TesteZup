@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image "qaninja/rubywd" 
+        }
+    }
     
     stages{
         stage('Build') {
@@ -12,6 +16,7 @@ pipeline {
         stage("Teste") {
             steps{
                 echo "Iniciando os testes"
+                sh "cucumber -p ci"
             }
         }
         stage("UAT") {
