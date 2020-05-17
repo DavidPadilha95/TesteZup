@@ -1,5 +1,5 @@
 ---
-default: -p bdd -p html -p chrome -p allure
+default: -p bdd -p html -p chrome -p json
 ci: -p bdd -p chrome -p json
 bdd: --format pretty
 html: --format html --out=log/report.html

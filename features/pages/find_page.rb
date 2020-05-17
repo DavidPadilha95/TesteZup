@@ -18,6 +18,7 @@ class Teste < SitePrism::Page
 
     def add
         console.click
+        binding.pry
         btn_comprar.click 
         btn_continue.click 
         btn_sub.click 
