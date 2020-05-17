@@ -24,7 +24,6 @@ pipeline {
         stage("prod") {
             steps{
                 echo "est"
-                echo "vvv"
             }
         }
        
